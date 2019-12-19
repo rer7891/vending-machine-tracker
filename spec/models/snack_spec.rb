@@ -7,7 +7,8 @@ RSpec.describe Snack, type: :model do
   end
 
   describe "relationships" do
-    it {should belong_to :machine}
+    it {should have_many :snack_machines}
+    it {should have_many(:machines).through(:snack_machines)}
   end
 
   describe "methods" do
