@@ -4,6 +4,6 @@ class Snack < ApplicationRecord
   belongs_to :machine
 
   def self.ave_price
-    average(:price).round(2)
+    average(:price)/100.round(2)
   end
 end

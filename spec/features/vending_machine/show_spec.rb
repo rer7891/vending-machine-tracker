@@ -32,9 +32,9 @@ RSpec.describe "As a visitor", type: :feature do
 
     it "can see an average price for all of the snacks" do
 
-      burger = @dons.snacks.create(name: "White Castle Burger", price: 3.50)
-      pop_rocks = @dons.snacks.create(name: "Pop Rocks", price: 1.50)
-      cheetos = @dons.snacks.create(name: "Flaming Hot Cheetos", price: 2.50)
+      burger = @dons.snacks.create(name: "White Castle Burger", price: 350)
+      pop_rocks = @dons.snacks.create(name: "Pop Rocks", price: 150)
+      cheetos = @dons.snacks.create(name: "Flaming Hot Cheetos", price: 250)
       snacks = Snack.all
 
       visit machine_path(@dons)
